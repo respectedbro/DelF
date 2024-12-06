@@ -133,12 +133,10 @@ main {
 }
 
 .banner-item {
-  background-image: url("./images/banners/Banner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center right;
+  background-size: contain;
   padding: 68px;
   border-radius: 10px;
+  background: #fff1b8 url("./images/banners/banner-image.png") no-repeat center right;
 }
 
 .banner-item--title {
@@ -296,6 +294,41 @@ main {
   top: 14px;
 }
 
+
+/*---------------------goods*/
+.products-card__description--name {
+  margin: 0;
+  color: #000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+}
+
+.products-card__description--text {
+  margin: 0;
+  color: #bcbcbc;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.products-card__description-controls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 30px;
+}
+
+.products-card__description-controls--price {
+  color: #000;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+}
+
+
+/*---------------------media*/
 @media (max-width: 991px) {
   .banner-item--title {
     max-width: 100%;
@@ -307,6 +340,10 @@ main {
 
   .products-card {
     width: calc((100% - 24px) / 2);
+  }
+
+  .banner-item {
+    background-image: none;
   }
 }
 
