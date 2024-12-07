@@ -137,7 +137,7 @@ main {
   background-size: contain;
   padding: 68px;
   border-radius: 10px;
-  background: #fff1b8 url("./images/banners/banner-image.png") no-repeat center
+  background: #fff1b8 url("../images/banners/banner-image.png") no-repeat center
     right;
 }
 
